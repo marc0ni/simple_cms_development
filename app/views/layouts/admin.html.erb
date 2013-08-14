@@ -5,6 +5,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title> Simple CMS | <%= @page_title || 'Admin Area' %> </title>
 		<meta name="author" content="Mark Lindamood">
+		<%= stylesheet_link_tag('public', 'admin', :media => 'all')%> 
 	</head>
 	<body>
 		<div id="header">
@@ -17,7 +18,7 @@
 			</div>
 			<% end %>
 			<div id="content">
-				<% yield %>
+				<%= yield %>
 			</div>
 		</div>
 		<div id="footer">
